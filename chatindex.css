@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #fdfbfb;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+}
+::-webkit-scrollbar-thumb::hover{
+    background: rgb(209, 207, 207);
+}
+.wrapper{
+    width: 370px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    border-top: 0px;
+}
+.wrapper .title{
+    
+    background: #eb1eda;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid ;
+    border-radius: 5px 5px 0 0;
+    /* background-image: url("/back1.jpeg"); */
+}
+.wrapper .form{
+    padding: 20px 25px;
+    min-height: 450px;
+    max-height: 400px;
+    overflow-y: auto;
+    /* color: #c00e0e; */
+}
+.wrapper .form .inbox {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: baseline;
+
+}
+.wrapper .form .user-index{
+    justify-content: flex-end ;
+    margin:13px 0;
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    padding: 10px ;
+    width: 40px;
+    color: #ffffff;
+    text-align: center;
+    /* line-height: 20px; */
+    border-radius: 50%;
+    font-size: 18px;
+    background: #eb1eda;
+}
+.wrapper .form .inbox .msg-header {
+    max-width:53%;
+    /* background: red; */
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: white;
+    background: #eb1eda ;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    word-break: break-all;
+}
+.form .user-index .msg-header{
+    color: rgb(248, 238, 238);
+    background: #efefef;
+}
+.wrapper .type-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #fffcff;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+.wrapper .type-field .input-data{
+    height: 40px;
+    width: 335px;
+    position: relative;
+}
+.wrapper .type-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #eb1eda;
+}
+.type-field .input-data input:focus{
+    border-color: #fdfdfb;
+}
+.input-data input::placeholder{
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+.input-data input:focus::placeholder{
+    color: #ffffff;
+}
+.wrapper .type-field .input-data button{
+    position: absolute;
+    right: 2px;
+    top: 10%;
+    height: 30px;
+    width: 65px;
+    color: #eb1eda;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    background: #f5f6f7;
+    border: 2px solid;
+    transform: translate(-50%);
+    transition: all 0.3s ease;
+}
+.wrapper .type-field .input-data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .type-field .input-data button:hover{
+  background: #eb1eda;
+  color: #f5f6f7;
+}
+
+
